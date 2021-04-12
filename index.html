@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang=”en”>
+    <head>
+        <title>Ryan's Journal</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Ryan">
+        <meta name="description" content="Journal Entries">
+        <link rel="icon" type="image/ico" href="favicon.jpg">
+    </head>
+    <body>
+        <main>
+            <header>
+                <nav>
+                    <span><a href="#Journal 1">Journal 1</a></span>
+                    <span><a href="#Journal 2">Journal 2</a></span>
+                    <span><a href="#Journal 3">Journal 3</a></span>
+                </nav>
+            </header>
+            <div id="Journal 3">
+                <details>
+                    <summary>Journal 3</summary>
+                    <h1>Average Wednesday</h1>
+                    <h2>2021/04/07</h2>
+                    <p>Nothing too eventful, typical workload. Finally got around to watching <em>Evangelion Rebuild</em> in large part because I heard about <em>Evangelion: 3.0+1.0 Thrice Upon a Time</em> and thought it was out. Well after finishing <em>Evangelion: 3.0 You Can (Not) Redo</em> I realized my mistake. Hopefully I don't forget the plot by the time <i>3.0+1.0</i> actually releases. I guess I can just rewatch the trailer until it comes out...</p>
+                    <video controls>
+                        <source src="EVANGELION 3010 THRICE UPON A TIME Official Trailer_v240P.mp4" type="video/mp4">
+                    </video>
+                    <h3>Schedule for Today</h3>
+                    <ol>
+                        <li>POLI 27 Lecture</li>
+                        <li>POLI 27 Discussion</li>
+                        <li>CSE 110 Lab</li>
+                        <li>Relax</li>
+                    </ol>
+                    <h3>Course Work for Today</h3>
+                    <ul>
+                        <li>Readings for MGT 166</li>
+                        <li>Paper for MGT 166</li>
+                    </ul>
+                </details>
+            </div>
+            <hr>
+            <div id="Journal 2">
+                <details>
+                    <summary>Journal 2</summary>
+                    <h1>Received Group Assignments!</h1>
+                    <h2>2021/04/06</h2>
+                    <p>I received my group assignment for <b>CSE 110</b>! I was <strong>assigned as co-lead</strong> and I'm extremely excited. I hope this experience will help me improve my communication and planning skills. Seeing development from a managerial perspective will be huge and force improvement in the aforementioned areas.</p>
+                    <h3>Schedule for Today</h3>
+                    <ol>
+                        <li>MGT 166 Lecture</li>
+                        <li>Work</li>
+                        <li>CSE 110 Lecture</li>
+                        <li>Relax</li>
+                    </ol>
+                    <h3>Course Work for Today</h3>
+                    <ul>
+                        <li>Reach out to new team</li>
+                        <li>Readings for POLI 27</li>
+                    </ul>
+                </details>
+            </div>
+            <hr>
+            <div id="Journal 1">
+                <details>
+                    <summary>Journal 1</summary>
+                    <h1>Mondays...</h1>
+                    <h2>2021/04/05</h2>
+                    <p>Oh boy, week 2! Thankfully things haven't picked up too much yet... I'm enjoying my classes so far though, definitely looking forward to our CSE 110 project. Currently working on Snow (Hey Oh) on the guitar, pretty much have it down but I want it perfect so I can cover it with friends. I've been working on the main riff for a couple months now I'm ashamed to say, but hey (oh) I've got it now. I've attached the riff from the original track, it averages out to 7.8 notes/second not to mention the difficulity involved in alternate picking the whole thing cleanly. Plus the riff goes on for 1.5 minutes straight. Definitely one of the hardest things I've learned.</p> <audio src="snow main riff.mp3" controls></audio>
+                    <p>Here's a picture of the guitars I own:</p>
+                    <img src="guitars.jpg" width="320">
+                    <h3>Schedule for Today</h3>
+                    <ol>
+                        <li>POLI 27 Lecture</li>
+                        <li>Work</li>
+                        <li>Relax</li>
+                    </ol>
+                    <h3>Course Work for Today</h3>
+                    <ul>
+                        <li>Readings for MGT 166</li>
+                    </ul>
+                </details>
+            </div>
+            <hr>
+        </main>
+        <form>
+            <fieldset>
+                <label for="title">Journal Title:</label>
+                <input type="text" id="title">
+                <br>
+                <label for="date">Date:</label>
+                <input type="date" id="date">
+                <br>
+                <label for="author">Author:</label>
+                <input list="authors" name="author" id="author">
+                <datalist id="authors">
+                    <option value="Ryan">
+                    <option value="Not Ryan">
+                </datalist>
+                <br>
+                <p>Enable Comments:</p>
+                <input type="radio" id="anyone" name="comments">
+                <label for="anyone">Anyone</label>
+                <input type="radio" id="registered" name="comments">
+                <label for="registered">Registered Users Only</label>
+                <input type="radio" id="disabled" name="comments">
+                <label for="disabled">Disable</label>
+                <br>
+                <label for="field">Select Field:</label>
+                <select id="field">
+                    <option value="main">Main Entry</option>
+                    <option value="schedule">Schedule for Today</option>
+                    <option value="workload">Course Work for Today</option>
+                </select>
+                <br>
+                <label for="body">Body:</label>
+                <textarea id="body"></textarea>
+                <br>
+                <label for="public">Public:</label>
+                <input type="checkbox" id="public">
+                <br>
+                <button type="button">Submit</button>
+            </fieldset>
+        </form>
+        <footer>
+            <p>Author: Ryan</p>
+        </footer>
+    </body>
+</html>
