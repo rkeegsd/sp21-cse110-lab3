@@ -10,6 +10,23 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     </head>
+    <style>
+        /* Form styling */
+        button:active {
+            color:red;
+        }
+
+        fieldset {
+            display:grid;
+            grid-template-columns: auto auto;
+            row-gap:1em;
+            column-gap:1em;
+        }
+
+        label, input {
+            color:darkblue;
+        }
+    </style>
     <body>
         <main>
             <header>
@@ -90,41 +107,64 @@
         </main>
         <form>
             <fieldset>
-                <label for="title">Journal Title:</label>
-                <input type="text" id="title">
-                <br>
-                <label for="date">Date:</label>
-                <input type="date" id="date">
-                <br>
-                <label for="author">Author:</label>
-                <input list="authors" name="author" id="author">
-                <datalist id="authors">
-                    <option value="Ryan">
-                    <option value="Not Ryan">
-                </datalist>
-                <br>
-                <p>Enable Comments:</p>
-                <input type="radio" id="anyone" name="comments">
-                <label for="anyone">Anyone</label>
-                <input type="radio" id="registered" name="comments">
-                <label for="registered">Registered Users Only</label>
-                <input type="radio" id="disabled" name="comments">
-                <label for="disabled">Disable</label>
-                <br>
-                <label for="field">Select Field:</label>
-                <select id="field">
-                    <option value="main">Main Entry</option>
-                    <option value="schedule">Schedule for Today</option>
-                    <option value="workload">Course Work for Today</option>
-                </select>
-                <br>
-                <label for="body">Body:</label>
-                <textarea id="body"></textarea>
-                <br>
-                <label for="public">Public:</label>
-                <input type="checkbox" id="public">
-                <br>
-                <button type="button">Submit</button>
+                <div class="gridcontainer">
+                    <label for="title">Journal Title:</label>
+                </div>
+                <div class="gridcontainer">
+                    <input type="text" id="title">
+                </div>
+                <div class="gridcontainer">
+                    <label for="date">Date:</label>
+                </div>
+                <div class="gridcontainer">
+                    <input type="date" id="date">
+                </div>
+                <div class="gridcontainer">
+                    <label for="author">Author:</label>
+                </div>
+                <div class="gridcontainer">
+                    <input list="authors" name="author" id="author">
+                    <datalist id="authors">
+                        <option value="Ryan">
+                        <option value="Not Ryan">
+                    </datalist>
+                </div>
+                <div class="gridcontainer">
+                    <p>Enable Comments:</p>
+                </div>
+                <div class="gridcontainer">
+                    <input type="radio" id="anyone" name="comments">
+                    <label for="anyone">Anyone</label>
+                    <input type="radio" id="registered" name="comments">
+                    <label for="registered">Registered Users Only</label>
+                    <input type="radio" id="disabled" name="comments">
+                    <label for="disabled">Disable</label>
+                </div>
+                <div class="gridcontainer">
+                    <label for="field">Select Field:</label>
+                </div>
+                <div class="gridcontainer">
+                    <select id="field">
+                        <option value="main">Main Entry</option>
+                        <option value="schedule">Schedule for Today</option>
+                        <option value="workload">Course Work for Today</option>
+                    </select>
+                </div>
+                <div class="gridcontainer">
+                    <label for="body">Body:</label>
+                </div>
+                <div class="gridcontainer">
+                    <textarea id="body"></textarea>
+                </div>
+                <div class="gridcontainer">
+                    <label for="public">Public:</label>
+                </div>
+                <div class="gridcontainer">
+                    <input type="checkbox" id="public">
+                </div>
+                <div class="gridcontainer">
+                    <button type="button">Submit</button>
+                </div>
             </fieldset>
         </form>
         <footer>
